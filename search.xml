@@ -6,5 +6,107 @@
     <content><![CDATA[<h1 id="第一个博客"><a href="#第一个博客" class="headerlink" title="第一个博客"></a>第一个博客</h1><p>圣邪之虚妄！圣邪之虚妄！哈哈哈哈！我是邪魇狗~~</p>
 <p><img src="/../images/4554.png" alt="4554"></p>
 ]]></content>
+      <tags>
+        <tag>地狱笑话</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo入门搭建~</title>
+    <url>/2025/03/02/hexo/</url>
+    <content><![CDATA[<h1 id="各类基础hexo指令"><a href="#各类基础hexo指令" class="headerlink" title="各类基础hexo指令"></a>各类基础hexo指令</h1><p>一键更新</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo s 	// 一定要先 clean，防止灵异事件发生</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>本地服务器</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p>创建新文章</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo n name</span><br></pre></td></tr></table></figure>
+
+<p>部署到网站</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>生成静态文件到默认的public</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo g //如果遇到灵异事件删除public文件</span><br></pre></td></tr></table></figure>
+
+<p>常用组合拳</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo s </span><br><span class="line">hexo clean &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
+
+<p>草稿</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo new draft &quot;new draft&quot;</span><br></pre></td></tr></table></figure>
+
+<p>会在source&#x2F;_drafts目录下生成一个new-draft.md文件。但是这个文件不被显示在页面上，链接也访问不到。也就是说如果你想把某一篇文章移除显示，又不舍得删除，可以把它移动到_drafts目录之中。</p>
+<p>启动server</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo server --drafts</span><br></pre></td></tr></table></figure>
+
+<p>草稿变文章</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo publish [layout] &lt;filename&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="文章可以拥有如下属性："><a href="#文章可以拥有如下属性：" class="headerlink" title="文章可以拥有如下属性："></a>文章可以拥有如下属性：</h3><table>
+<thead>
+<tr>
+<th align="center">-</th>
+<th>Setting</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td>layout</td>
+<td>Layout</td>
+<td>post或page</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td>title</td>
+<td>文章的标题</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td>date</td>
+<td>创建日期</td>
+<td>文件的创建日期</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td>updated</td>
+<td>修改日期</td>
+<td>文件的修改日期</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td>comments</td>
+<td>是否开启评论</td>
+<td>true</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td>tags</td>
+<td>标签</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td>categories</td>
+<td>分类</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td>permalink</td>
+<td>url中的名字</td>
+<td>文件名</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>环境搭建</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+      </tags>
   </entry>
 </search>
