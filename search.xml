@@ -13,7 +13,7 @@
   <entry>
     <title>hexo入门搭建~</title>
     <url>/2025/03/02/40/</url>
-    <content><![CDATA[<h1 id="各类基础hexo指令"><a href="#各类基础hexo指令" class="headerlink" title="各类基础hexo指令"></a>各类基础hexo指令</h1><p>一键更新</p>
+    <content><![CDATA[<h1 id="各类基础hexo指令"><a href="#各类基础hexo指令" class="headerlink" title="各类基础hexo指令"></a>各类基础hexo指令</h1><h2 id="常见部署指令"><a href="#常见部署指令" class="headerlink" title="常见部署指令"></a>常见部署指令</h2><p>一键更新</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo s 	// 一定要先 clean，防止灵异事件发生</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <p>本地服务器</p>
@@ -41,9 +41,8 @@
 <p>草稿变文章</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo publish [layout] &lt;filename&gt;</span><br></pre></td></tr></table></figure>
 
-
-
-<h3 id="文章可以拥有如下属性："><a href="#文章可以拥有如下属性：" class="headerlink" title="文章可以拥有如下属性："></a>文章可以拥有如下属性：</h3><table>
+<p>文章可以拥有如下属性：</p>
+<table>
 <thead>
 <tr>
 <th align="center">-</th>
@@ -101,12 +100,83 @@
 <td>文件名</td>
 </tr>
 </tbody></table>
+<h2 id="书写博客相关指令以及博客默认内容调整"><a href="#书写博客相关指令以及博客默认内容调整" class="headerlink" title="书写博客相关指令以及博客默认内容调整"></a>书写博客相关指令以及博客默认内容调整</h2><p>创建文章前要先选定模板，在hexo中也叫做布局。hexo支持三种布局（layout）：post(默认)、draft、page。</p>
+<p>在博客目录下输入以下命令时，会默认使用post布局，然后自动在source_posts目录生成一个text1.md文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo n text1</span><br></pre></td></tr></table></figure>
+
+<p>也可以选择指定布局</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo n [layout_name] draft1</span><br></pre></td></tr></table></figure>
+
+<p>该命令创建了一个使用特定布局的名为draft1的文章。</p>
+<p>创建一个新的.md文件可以看到文章开头的内容。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">title: 赛学博士</span><br><span class="line">top: 0</span><br><span class="line">copyright: true</span><br><span class="line">date: 2025-03-04 23:05:21</span><br><span class="line">updated: 2025-03-04 23:05:21</span><br><span class="line">permalink:</span><br><span class="line">password:</span><br><span class="line">comments:</span><br><span class="line">tags:</span><br><span class="line">categories:</span><br><span class="line">keywords:</span><br><span class="line">description:</span><br></pre></td></tr></table></figure>
+
+<p>想要更改其中内容可以到<code>scaffolds/</code>目录下的三个.md文件进行修改。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">updated: &#123;&#123; date &#125;&#125;</span><br><span class="line">permalink: </span><br><span class="line">top: 0</span><br><span class="line">password:</span><br><span class="line">comments: </span><br><span class="line">copyright: true</span><br><span class="line">tags:</span><br><span class="line">categories: </span><br><span class="line">keywords:</span><br><span class="line">description:</span><br></pre></td></tr></table></figure>
+
+<p>可以直接这样设置，由于本人使用Typora编辑，所以头尾的“—”都省去。</p>
 ]]></content>
       <categories>
         <category>环境搭建</category>
       </categories>
       <tags>
         <tag>前端</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>赛学博士</title>
+    <url>/2025/03/04/21/</url>
+    <content><![CDATA[<h1 id="关于pvp一个完整回合的阶段及其判定流程"><a href="#关于pvp一个完整回合的阶段及其判定流程" class="headerlink" title="关于pvp一个完整回合的阶段及其判定流程"></a>关于pvp一个完整回合的阶段及其判定流程</h1><h2 id="回合开始前"><a href="#回合开始前" class="headerlink" title="*回合开始前*"></a><em><strong>*回合开始前*</strong></em></h2><p>读秒阶段</p>
+<p>出战时</p>
+<p>除击杀控无法看到，其他效果读秒阶段就可以看到</p>
+<h2 id="出战后"><a href="#出战后" class="headerlink" title="*出战后*"></a><em><strong>*出战后*</strong></em></h2><p>读秒阶段看不见</p>
+<p>操作时双切</p>
+<h2 id="登场时"><a href="#登场时" class="headerlink" title="*登场时*"></a><em><strong>*登场时*</strong></em></h2><p>首回合挑战方、房主判定</p>
+<p>同切拼手速</p>
+<p>次数效果被驱逐消失</p>
+<p>回合开始时（先判定房主，后判定挑战方）</p>
+<p>顺序：精灵魂印、套装</p>
+<h2 id="战斗阶段"><a href="#战斗阶段" class="headerlink" title="*战斗阶段*"></a><em><strong>*战斗阶段*</strong></em></h2><p>出手流程开始时，烧伤、冻伤、中毒、流血判定</p>
+<p>技能命中前（例如命中前断回合）</p>
+<p>技能命中时</p>
+<p>技能效果生效时</p>
+<p>技能内部顺序，先后判断</p>
+<p>一次性、不涉及增伤效果</p>
+<p>造成攻击伤害前</p>
+<p>绝大部分回合类效果生效</p>
+<p>火王魂印会将回合类效果生效前断掉</p>
+<p>注：这里的回合类效果，是每回合发生一次的效果，回合弹控、免断覆盖整个回合，不在此。</p>
+<p>****造成伤害前—–瞬杀—–犀牛回满血—–通用增伤节点—–护盾—–通用减伤节点—–通用锁伤****节点—–通用挡伤节点—–造成攻击伤害</p>
+<p>受到伤害为零</p>
+<p>无法触发“造成伤害高于&#x2F;低于n时”的效果</p>
+<p>无法触发“收到&#x2F;造成攻击伤害后”效果</p>
+<h2 id="受到攻击后"><a href="#受到攻击后" class="headerlink" title="*受到攻击后*"></a><em><strong>*受到攻击后*</strong></em></h2><p>有些需要命中触发，有些不需要</p>
+<h2 id="使用技能后"><a href="#使用技能后" class="headerlink" title="*使用技能后*"></a><em><strong>*使用技能后*</strong></em></h2><p>与受到攻击后重叠，后续可能优化。现有情况是受击方先进行判定</p>
+<h2 id="出手流程结束时"><a href="#出手流程结束时" class="headerlink" title="*出手流程结束时*"></a><em><strong>*出手流程结束时*</strong></em></h2><p>部分魂印靠后结算</p>
+<h2 id="回合结束时"><a href="#回合结束时" class="headerlink" title="*回合结束时*"></a><em><strong>*回合结束时*</strong></em></h2><p>先精灵魂印、在套装</p>
+<p>至少一方选择出手，先手方先触发</p>
+<p>双方均未出手，房主房先触发</p>
+<p>先手击杀、先手自爆，跳过回合结束时效果</p>
+<h2 id="回合结束后"><a href="#回合结束后" class="headerlink" title="*回合结束后*"></a><em><strong>*回合结束后*</strong></em></h2><p>未被击败、被击败—–未击败对手、击败对手时—–被击败后—–击败对手后（待定）</p>
+<p>插入型效果</p>
+<p>回合弹控、免断、免弱，削弱，续航，只有一回合会在回合开始时开始，回合结束后的回合扣减点停止，两回合时第一回合所有阶段全覆盖。</p>
+<h1 id="精灵配招以及pvp环境应对策略"><a href="#精灵配招以及pvp环境应对策略" class="headerlink" title="精灵配招以及pvp环境应对策略"></a>精灵配招以及pvp环境应对策略</h1><h2 id="苍月影（脸狗）"><a href="#苍月影（脸狗）" class="headerlink" title="*苍月影（脸狗）*"></a><em><strong>*苍月影（脸狗）*</strong></em></h2><p>配招：银歌夜舞+双属性+神秘石之力s</p>
+<p>未冰封先制加一，使用技能50%冰封，未触发消回合。使用攻击技能，攻击时处于冰封扣三分之一粉，不是冰封吸三分之一粉</p>
+<p>弦月锋华：4回合弹控，下一次盖，下2回合先制加2</p>
+<p>过星皇：如果开命宇，先三加第五，随后神秘石</p>
+<p>暗王：我方强化，敌方无强化，先三抬走</p>
+<p>灯使：先手勇，但先手三分之一粉会无效</p>
+<p>枫眠：保证身上有盖，叠第五，控住以后保证没有盖，开强化第五击杀</p>
+<p>北鸟：祈祷冰封不触发，垒第五粉</p>
+<p>鬼蝶：先手勇，miss也有魂印</p>
+<p>尤里米特：在缭乱后接弦月锋华断回合（处于强化时）</p>
+<p>灵巢：第五加弦月锋华，防止强化第五加洄还</p>
+]]></content>
+      <categories>
+        <category>游戏杂谈</category>
+      </categories>
+      <tags>
+        <tag>赛尔号</tag>
       </tags>
   </entry>
 </search>
