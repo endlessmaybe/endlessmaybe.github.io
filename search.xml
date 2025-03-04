@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>first-blog</title>
-    <url>/2025/03/02/first-blog/</url>
+    <url>/2025/03/02/35/</url>
     <content><![CDATA[<p>魇爹镇楼</p>
 <p><img src="/../images/4554.png" alt="4554"></p>
 ]]></content>
@@ -12,7 +12,7 @@
   </entry>
   <entry>
     <title>hexo入门搭建~</title>
-    <url>/2025/03/02/hexo/</url>
+    <url>/2025/03/02/40/</url>
     <content><![CDATA[<h1 id="各类基础hexo指令"><a href="#各类基础hexo指令" class="headerlink" title="各类基础hexo指令"></a>各类基础hexo指令</h1><p>一键更新</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo s 	// 一定要先 clean，防止灵异事件发生</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
