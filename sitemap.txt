@@ -1,3 +1,9 @@
+http://heimdallrwhb.com/lib/pjax/package.json
+http://heimdallrwhb.com/lib/pjax/example/forms.html
+http://heimdallrwhb.com/lib/pjax/example/index.html
+http://heimdallrwhb.com/lib/pjax/example/page3.html
+http://heimdallrwhb.com/lib/pjax/example/page2.html
+http://heimdallrwhb.com/lib/pjax/CHANGELOG.html
 http://heimdallrwhb.com/2025/03/02/40/
 http://heimdallrwhb.com/2025/03/04/21/
 http://heimdallrwhb.com/2025/03/02/35/
