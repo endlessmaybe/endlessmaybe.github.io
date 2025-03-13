@@ -3,7 +3,7 @@
   <entry>
     <title>first-blog</title>
     <url>/2025/03/02/35/</url>
-    <content><![CDATA[<p>魇爹镇楼</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>魇爹镇楼</p>
 <p><img src="/../images/4554.png" alt="4554"></p>
 ]]></content>
       <tags>
@@ -13,7 +13,7 @@
   <entry>
     <title>hexo入门搭建~</title>
     <url>/2025/03/02/40/</url>
-    <content><![CDATA[<h1 id="各类基础hexo指令"><a href="#各类基础hexo指令" class="headerlink" title="各类基础hexo指令"></a>各类基础hexo指令</h1><h2 id="常见部署指令"><a href="#常见部署指令" class="headerlink" title="常见部署指令"></a>常见部署指令</h2><p>一键更新</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="各类基础hexo指令"><a href="#各类基础hexo指令" class="headerlink" title="各类基础hexo指令"></a>各类基础hexo指令</h1><h2 id="常见部署指令"><a href="#常见部署指令" class="headerlink" title="常见部署指令"></a>常见部署指令</h2><p>一键更新</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo s 	// 一定要先 clean，防止灵异事件发生</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <p>本地服务器</p>
@@ -126,7 +126,7 @@
   <entry>
     <title>赛学博士</title>
     <url>/2025/03/04/21/</url>
-    <content><![CDATA[<p>天启星魂镇楼</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>天启星魂镇楼</p>
 <p><img src="/../images/4677.png" alt="4677"></p>
 <h1 id="关于pvp一个完整回合的阶段及其判定流程"><a href="#关于pvp一个完整回合的阶段及其判定流程" class="headerlink" title="关于pvp一个完整回合的阶段及其判定流程"></a>关于pvp一个完整回合的阶段及其判定流程</h1><h2 id="回合开始前"><a href="#回合开始前" class="headerlink" title="*回合开始前*"></a><em><strong>*回合开始前*</strong></em></h2><p>读秒阶段</p>
 <p>出战时</p>

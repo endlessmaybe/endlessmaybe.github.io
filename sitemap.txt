@@ -1,8 +1,8 @@
 https://endlessmaybe.github.io/lib/pjax/package.json
 https://endlessmaybe.github.io/lib/pjax/example/forms.html
 https://endlessmaybe.github.io/lib/pjax/example/index.html
-https://endlessmaybe.github.io/lib/pjax/example/page3.html
 https://endlessmaybe.github.io/lib/pjax/example/page2.html
+https://endlessmaybe.github.io/lib/pjax/example/page3.html
 https://endlessmaybe.github.io/lib/pjax/CHANGELOG.html
 https://endlessmaybe.github.io/2025/03/02/40/
 https://endlessmaybe.github.io/2025/03/04/21/
