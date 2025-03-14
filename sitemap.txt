@@ -1,3 +1,4 @@
+https://endlessmaybe.github.io/2025/03/14/57/
 https://endlessmaybe.github.io/lib/pjax/package.json
 https://endlessmaybe.github.io/lib/pjax/example/forms.html
 https://endlessmaybe.github.io/lib/pjax/example/index.html
@@ -13,5 +14,7 @@ https://endlessmaybe.github.io/
 https://endlessmaybe.github.io/tags/%E5%9C%B0%E7%8B%B1%E7%AC%91%E8%AF%9D/
 https://endlessmaybe.github.io/tags/%E5%89%8D%E7%AB%AF/
 https://endlessmaybe.github.io/tags/%E8%B5%9B%E5%B0%94%E5%8F%B7/
+https://endlessmaybe.github.io/tags/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/
 https://endlessmaybe.github.io/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/
 https://endlessmaybe.github.io/categories/%E6%B8%B8%E6%88%8F%E6%9D%82%E8%B0%88/
+https://endlessmaybe.github.io/categories/c/

@@ -6,7 +6,7 @@
   <link href="https://endlessmaybe.github.io/atom.xml" rel="self"/>
   
   <link href="https://endlessmaybe.github.io/"/>
-  <updated>2025-03-04T15:05:21.000Z</updated>
+  <updated>2025-03-14T15:08:57.000Z</updated>
   <id>https://endlessmaybe.github.io/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>c++入门</title>
+    <link href="https://endlessmaybe.github.io/2025/03/14/57/"/>
+    <id>https://endlessmaybe.github.io/2025/03/14/57/</id>
+    <published>2025-03-14T15:08:57.000Z</published>
+    <updated>2025-03-14T15:08:57.000Z</updated>
+    
+    
+    <summary type="html">本帖以c++ primer plus为基础撰写</summary>
+    
+    
+    
+    <category term="c++" scheme="https://endlessmaybe.github.io/categories/c/"/>
+    
+    
+    <category term="基本语法" scheme="https://endlessmaybe.github.io/tags/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>赛学博士</title>

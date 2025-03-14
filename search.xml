@@ -189,4 +189,35 @@
         <tag>赛尔号</tag>
       </tags>
   </entry>
+  <entry>
+    <title>c++入门</title>
+    <url>/2025/03/14/57/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h2><h3 id="for循环组成"><a href="#for循环组成" class="headerlink" title="for循环组成"></a>for循环组成</h3><p>for(initialization; test-expression; update-expression)</p>
+<p>​    body</p>
+<p>循环体可以包含一条语句，也可以使用复合语句或代码块包含多条语句。</p>
+<p>test-expression（测试表达式）决定循环体是否被执行。update-expression(更新表达式)。</p>
+<p>c与c++不同之处在于，c++可在initialization处直接声明变量。但上述for语句因不适用原来的句法，最初只是定义了新的表达式-声明语句表达式来合法化，现在for句法修改如下：</p>
+<p>for(for-init-statement condition;expression statement)(其实没差，为了满足语句和表达式的差异，由于for-init-statement condition自带;所以就没有了特意定义新的表达式问题)。</p>
+<h3 id="递增运算符（-）和递减运算符（–）"><a href="#递增运算符（-）和递减运算符（–）" class="headerlink" title="递增运算符（++）和递减运算符（–）"></a>递增运算符（++）和递减运算符（–）</h3><p>++c;   c++;存在两种写法。虽然两者对于操作数一致但是影响的时间不同。</p>
+<p>为了方便解释++、–运算符生效规定。需要引入副作用和顺序点的概念。副作用指的是计算表达式时对某些东西进行了修改；顺序点是程序执行的一个点。在c++中，一个“;”就是一个顺序点。此外，任何完整表达式的末尾也是一个顺序点。</p>
+<p>例</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">while(guests++&lt;10)&#123;</span><br><span class="line">    cout&lt;&lt;guests&lt;&lt;endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>首先，输出的guests是在while循环语句中执行了++的guests。其次++通过使用后缀形式，确保guests先与10进行比较后再讲值加1。</p>
+<p>应该尽量避免的代码形式</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">y=(4+x++)+(6+x++);</span><br></pre></td></tr></table></figure>
+
+<p>上文讨论过，以；为顺序点，所以在计算过程中x的值什么时候发生改变是无法判断的。所以执行程序时可能会出现未知问题。</p>
+<h3 id="c-风格字符串比较"><a href="#c-风格字符串比较" class="headerlink" title="c-风格字符串比较"></a>c-风格字符串比较</h3><p>若word为数组名</p>
+<p>word&#x3D;&#x3D;”mate”并非预想中进行工作。因为数组名是数组的地址。引号括起的字符串常量也是地址，所以上述并非字符串比较，而是地址比较。所以即使是相同字符串其地址仍不相同。</p>
+<p>如果要进行字符串的比较，需要用strcmp()函数解决。函数可接受二者地址为参数，这说明参数可以是指针、字符串常量或字符数组名。实际上strcmp函数是通过比较每个字符的ASCII码返回差值确定最终输出的，所以比较的不是字符串的长度问题，而是字符串总字符编码差。</p>
+<h3 id="比较string类字符串"><a href="#比较string类字符串" class="headerlink" title="比较string类字符串"></a>比较string类字符串</h3><p>与c-风格字符串不同，string类字符串实现了重载运算符，可直接用”&#x3D;&#x3D;” “!&#x3D;”进行判断，相比上述更简单直观。</p>
+]]></content>
+      <categories>
+        <category>c++</category>
+      </categories>
+      <tags>
+        <tag>基本语法</tag>
+      </tags>
+  </entry>
 </search>
