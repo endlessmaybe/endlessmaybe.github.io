@@ -215,6 +215,39 @@
 <p>strcat()：连接两个字符串。</p>
 <p>sort()：对数组进行排序。</p>
 <p>search()：在数组或字符串中搜索特定元素或字符。</p>
+<h3 id="字符串输入问题"><a href="#字符串输入问题" class="headerlink" title="字符串输入问题"></a>字符串输入问题</h3><p>cin在输入字符串时使用空白（空格、制表符和换行符）来确定结束位置，遇到多个单词cin无法正常读取。</p>
+<p>如果要读取完整的一串带有空格的字符串，需要用到getline()与get()，两个函数遇到换行符才结束输入。</p>
+<p>cin.getline(name,num)</p>
+<p>注意需要留一位插入空字符。</p>
+<p><img src="/../images/QQ20250316-111552.png" alt="QQ20250316-111552"></p>
+<p>get()</p>
+<p>与getline()不同，get不在读取并丢弃换行符。而是留在输入队列中。可以采取cin.get()空过。</p>
+<p>注意：在使用cin&gt;&gt;year;等表达式时，换行符会保留。此时调用getline()会导致读取空行，输出空字符串。此时就需要cin.get()进行空过。</p>
+<h3 id="string类"><a href="#string类" class="headerlink" title="string类"></a>string类</h3><p>string类的赋值与拼加，str&#x3D;str1+str2;可直接直观拼加。</p>
+<p>str.length()返回字符串长度。</p>
+<p>要想在输出有“”号，需要在引号开头使用“+<em>结尾使用+</em>”</p>
+<h2 id="结构体"><a href="#结构体" class="headerlink" title="结构体"></a>结构体</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">strcut inflatable&#123;</span><br><span class="line">    char name[20];</span><br><span class="line">    float volume;</span><br><span class="line">    double price;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>这里创建了像char或int一样的变量，在后续代码可以创建inflatable的变量，大括号中是结构存储的数据类型。可以相同也可以不相同。</p>
+<p>struct inflatable a；</p>
+<p>inflatable a；</p>
+<p>这两种定义方式都正确。</p>
+<p>如果要访问结构体中的部分数据类型通过“ . ”来访问。inflatable.name[i]就是name数组中存储部分。以此类推。</p>
+<p>注意：inflatable.name相当于输出数组全部。</p>
+<p><img src="/../images/QQ20250316-153925.png" alt="QQ20250316-153925"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">struct&#123;</span><br><span class="line">    int x;</span><br><span class="line">    int y;</span><br><span class="line">&#125;position，position2;</span><br></pre></td></tr></table></figure>
+
+<p>没有名字的结构体仍然合法。在括号后面就是以此结构体为变量的声明。声明可以有多个，但是在下面的语句中无法再定义这种结构体。</p>
+<p>同样的结构体数组也是被允许的。</p>
+<h2 id="共用体（先略过）"><a href="#共用体（先略过）" class="headerlink" title="共用体（先略过）"></a>共用体（先略过）</h2><h2 id="指针和自由存储空间"><a href="#指针和自由存储空间" class="headerlink" title="指针和自由存储空间"></a>指针和自由存储空间</h2><p>指针本身是一个变量，存储的是值的地址。而不是值本身。只需要对变量应用地址运算符（&amp;），就能获得位置。例如home是一个变量，&amp;home使其存储数值的地址。*运算符被称为间接值，或是解除引用运算符。</p>
+<p>int *a&#x3D;&home;就是创建一个指向home地址的指针变量。</p>
+<p><img src="/../images/image-20250316155927997.png" alt="image-20250316155927997"></p>
+<p><img src="/../images/image-20250316160006850.png" alt="image-20250316160006850"></p>
+<p>int*是一种类型—-指向int的指针。但是</p>
+<p>int*p1,p2;是创建一个指针加上一个int变量。</p>
+<p>对于每一个指针变量名，都需要使用一个*。</p>
+<h3 id="指针、数组与指针算术"><a href="#指针、数组与指针算术" class="headerlink" title="指针、数组与指针算术"></a>指针、数组与指针算术</h3><p>整数变量加一，其值增加一。指针变量加一，增加的量等于他指向的类型的字节数。指向double的指针加一，若使用8个字节存储，数值加八。这说明一点：c++将数组名解释为地址。</p>
+<p>因此根据这一特性，可以通过指针运算来访问整个数组。</p>
 <h1 id="循环及其表达式"><a href="#循环及其表达式" class="headerlink" title="循环及其表达式"></a>循环及其表达式</h1><h2 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h2><h3 id="for循环组成"><a href="#for循环组成" class="headerlink" title="for循环组成"></a>for循环组成</h3><p>for(initialization; test-expression; update-expression)</p>
 <p>​    body</p>
 <p>循环体可以包含一条语句，也可以使用复合语句或代码块包含多条语句。</p>
