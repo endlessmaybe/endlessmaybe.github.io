@@ -29,11 +29,15 @@
 <meta property="og:site_name" content="Heimdallr的个人博客">
 <meta property="og:description" content="本帖以c++ primer plus为基础撰写">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://endlessmaybe.github.io/images/QQ20250316-100934.png">
+<meta property="og:image" content="https://endlessmaybe.github.io/images/QQ20250316-104332.png">
+<meta property="og:image" content="https://endlessmaybe.github.io/images/QQ20250315-112559.png">
 <meta property="article:published_time" content="2025-03-14T15:08:57.000Z">
 <meta property="article:modified_time" content="2025-03-14T15:08:57.000Z">
 <meta property="article:author" content="Heimdalllr">
 <meta property="article:tag" content="基本语法">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://endlessmaybe.github.io/images/QQ20250316-100934.png">
 
 <link rel="canonical" href="https://endlessmaybe.github.io/2025/03/14/57/">
 
@@ -243,14 +247,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.1k</span>
+              <span>2k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
+              <span>2 分钟</span>
             </span>
             <div class="post-description">本帖以c++ primer plus为基础撰写</div>
 
@@ -263,7 +267,30 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h2><h3 id="for循环组成"><a href="#for循环组成" class="headerlink" title="for循环组成"></a>for循环组成</h3><p>for(initialization; test-expression; update-expression)</p>
+        <h1 id="复合类型"><a href="#复合类型" class="headerlink" title="复合类型"></a>复合类型</h1><h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><p>typename arrayname[arraysize]</p>
+<p>数组被称为复合类型，因为是使用其他类型创建的。(c语言使用术语“派生类型”)</p>
+<p>例如</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">float loans[20];</span><br></pre></td></tr></table></figure>
+
+<p>loans类型叫做“float数组”。</p>
+<p><img src="/../images/QQ20250316-100934.png" alt="QQ20250316-100934"></p>
+<p>数组初始化时，如果只对一部分初始化，编译器将其他元素设置为零。</p>
+<p>如果初始化时[]为空</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">short things[]=&#123;1,5,3,8&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>编译器使things包含四个元素。</p>
+<h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><h3 id="c-风格字符串基本功能"><a href="#c-风格字符串基本功能" class="headerlink" title="c-风格字符串基本功能"></a>c-风格字符串基本功能</h3><p>存储在char数组中，c-风格字符串以空字符结尾，空字符结尾为\0.其ASCII码为0。尽量避免将不是字符串的字符数组当做字符串处理。数组表达字符串也可以这样表达。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">char bird[11]=&quot;Mr.Cheeps&quot;;</span><br><span class="line">char fish[]=&quot;Bubbles&quot;</span><br></pre></td></tr></table></figure>
+
+<p>引号括起的字符串自带结尾空字符。</p>
+<p><img src="/../images/QQ20250316-104332.png" alt="QQ20250316-104332"></p>
+<p>注：字符串常量（使用双引号）不能与字符常量（使用单引号）互换。字符常量’S’在ASCII系统中，只是83的另一种写法，而“S”代表的是（字符S和\0）组成的字符串。“S”实际上是字符串所在地址。由于地址是一种独立的类型，所以c++禁止将地址赋值。</p>
+<h3 id="c-风格字符串操作"><a href="#c-风格字符串操作" class="headerlink" title="c-风格字符串操作"></a>c-风格字符串操作</h3><p>strlen()：计算字符串的长度</p>
+<p>strcpy()：复制字符串。</p>
+<p>strcat()：连接两个字符串。</p>
+<p>sort()：对数组进行排序。</p>
+<p>search()：在数组或字符串中搜索特定元素或字符。</p>
+<h1 id="循环及其表达式"><a href="#循环及其表达式" class="headerlink" title="循环及其表达式"></a>循环及其表达式</h1><h2 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h2><h3 id="for循环组成"><a href="#for循环组成" class="headerlink" title="for循环组成"></a>for循环组成</h3><p>for(initialization; test-expression; update-expression)</p>
 <p>​    body</p>
 <p>循环体可以包含一条语句，也可以使用复合语句或代码块包含多条语句。</p>
 <p>test-expression（测试表达式）决定循环体是否被执行。update-expression(更新表达式)。</p>
@@ -283,6 +310,19 @@
 <p>word&#x3D;&#x3D;”mate”并非预想中进行工作。因为数组名是数组的地址。引号括起的字符串常量也是地址，所以上述并非字符串比较，而是地址比较。所以即使是相同字符串其地址仍不相同。</p>
 <p>如果要进行字符串的比较，需要用strcmp()函数解决。函数可接受二者地址为参数，这说明参数可以是指针、字符串常量或字符数组名。实际上strcmp函数是通过比较每个字符的ASCII码返回差值确定最终输出的，所以比较的不是字符串的长度问题，而是字符串总字符编码差。</p>
 <h3 id="比较string类字符串"><a href="#比较string类字符串" class="headerlink" title="比较string类字符串"></a>比较string类字符串</h3><p>与c-风格字符串不同，string类字符串实现了重载运算符，可直接用”&#x3D;&#x3D;” “!&#x3D;”进行判断，相比上述更简单直观。</p>
+<h2 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h2><p>while(test-condition)</p>
+<p>​    body</p>
+<p><img src="/../images/QQ20250315-112559.png" alt="QQ20250315-112559"></p>
+<h3 id="for与while"><a href="#for与while" class="headerlink" title="for与while"></a>for与while</h3><p>二者几乎等效，对于任意的while循环，可以改写为for循环形式。</p>
+<p>while(test-expression)</p>
+<p>​    body</p>
+<p>for(;test-expression;)</p>
+<p>​    body</p>
+<p>for与while区别主要在于continue语句。但默认无法知道确定循环次数时，采用while语句。</p>
+<h3 id="延时循环"><a href="#延时循环" class="headerlink" title="延时循环"></a>延时循环</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">long wait=0;</span><br><span class="line">while(wait&lt;10000)</span><br><span class="line">    wait++;</span><br></pre></td></tr></table></figure>
+
+<p>该代码在计算器处理器速度变化，也相应随之改变。此外有些编译器会将wait设为1000，要想实现延时循环，最好用系统时钟完成。</p>
+<h4 id="函数clock"><a href="#函数clock" class="headerlink" title="函数clock()"></a>函数clock()</h4><p>需要头文件ctime，</p>
 
     </div>
 
@@ -405,7 +445,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#for%E5%BE%AA%E7%8E%AF"><span class="nav-number">1.</span> <span class="nav-text">for循环</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#for%E5%BE%AA%E7%8E%AF%E7%BB%84%E6%88%90"><span class="nav-number">1.1.</span> <span class="nav-text">for循环组成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%92%E5%A2%9E%E8%BF%90%E7%AE%97%E7%AC%A6%EF%BC%88-%EF%BC%89%E5%92%8C%E9%80%92%E5%87%8F%E8%BF%90%E7%AE%97%E7%AC%A6%EF%BC%88%E2%80%93%EF%BC%89"><span class="nav-number">1.2.</span> <span class="nav-text">递增运算符（++）和递减运算符（–）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#c-%E9%A3%8E%E6%A0%BC%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%AF%94%E8%BE%83"><span class="nav-number">1.3.</span> <span class="nav-text">c-风格字符串比较</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AF%94%E8%BE%83string%E7%B1%BB%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="nav-number">1.4.</span> <span class="nav-text">比较string类字符串</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%A4%8D%E5%90%88%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.</span> <span class="nav-text">复合类型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E7%BB%84"><span class="nav-number">1.1.</span> <span class="nav-text">数组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="nav-number">1.2.</span> <span class="nav-text">字符串</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#c-%E9%A3%8E%E6%A0%BC%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%9F%BA%E6%9C%AC%E5%8A%9F%E8%83%BD"><span class="nav-number">1.2.1.</span> <span class="nav-text">c-风格字符串基本功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#c-%E9%A3%8E%E6%A0%BC%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%93%8D%E4%BD%9C"><span class="nav-number">1.2.2.</span> <span class="nav-text">c-风格字符串操作</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BE%AA%E7%8E%AF%E5%8F%8A%E5%85%B6%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="nav-number">2.</span> <span class="nav-text">循环及其表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#for%E5%BE%AA%E7%8E%AF"><span class="nav-number">2.1.</span> <span class="nav-text">for循环</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#for%E5%BE%AA%E7%8E%AF%E7%BB%84%E6%88%90"><span class="nav-number">2.1.1.</span> <span class="nav-text">for循环组成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%92%E5%A2%9E%E8%BF%90%E7%AE%97%E7%AC%A6%EF%BC%88-%EF%BC%89%E5%92%8C%E9%80%92%E5%87%8F%E8%BF%90%E7%AE%97%E7%AC%A6%EF%BC%88%E2%80%93%EF%BC%89"><span class="nav-number">2.1.2.</span> <span class="nav-text">递增运算符（++）和递减运算符（–）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#c-%E9%A3%8E%E6%A0%BC%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%AF%94%E8%BE%83"><span class="nav-number">2.1.3.</span> <span class="nav-text">c-风格字符串比较</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AF%94%E8%BE%83string%E7%B1%BB%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="nav-number">2.1.4.</span> <span class="nav-text">比较string类字符串</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#while%E5%BE%AA%E7%8E%AF"><span class="nav-number">2.2.</span> <span class="nav-text">while循环</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#for%E4%B8%8Ewhile"><span class="nav-number">2.2.1.</span> <span class="nav-text">for与while</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BB%B6%E6%97%B6%E5%BE%AA%E7%8E%AF"><span class="nav-number">2.2.2.</span> <span class="nav-text">延时循环</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%87%BD%E6%95%B0clock"><span class="nav-number">2.2.2.1.</span> <span class="nav-text">函数clock()</span></a></li></ol></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -496,7 +536,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">3 分钟</span>
+    <span title="站点阅读时长">4 分钟</span>
 </div>
   <div class="powered-by">
     <!--由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动-->
