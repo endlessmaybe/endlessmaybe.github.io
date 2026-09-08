@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Heimdallr 的个人介绍、技术能力、自我评估与未来三年学习规划。">
+  <title>关于我 · Heimdallr</title>
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --card: rgba(255,255,255,.86);
+      --text: #172033;
+      --muted: #657086;
+      --line: #dde3ec;
+      --accent: #305bd6;
+      --accent-soft: #eaf0ff;
+      --shadow: 0 18px 50px rgba(26,42,78,.10);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 15% 5%, #e9efff 0, transparent 32rem),
+        radial-gradient(circle at 90% 20%, #eef8ff 0, transparent 28rem),
+        var(--bg);
+      font-family: Inter, "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+      line-height: 1.75;
+    }
+    a { color: inherit; }
+    .shell { width: min(1080px, calc(100% - 36px)); margin: 0 auto; }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    nav a { text-decoration: none; }
+    nav .back { font-weight: 700; color: var(--text); }
+    .hero {
+      padding: 72px 0 52px;
+      display: grid;
+      grid-template-columns: 1.35fr .65fr;
+      gap: 42px;
+      align-items: end;
+    }
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .16em;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(46px, 7vw, 86px);
+      line-height: 1.02;
+      letter-spacing: -.045em;
+    }
+    .lead {
+      margin: 26px 0 0;
+      max-width: 720px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+    .summary {
+      border-left: 1px solid var(--line);
+      padding-left: 28px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .summary strong { display: block; color: var(--text); font-size: 15px; margin-bottom: 6px; }
+    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 18px; }
+    .card {
+      grid-column: span 6;
+      background: var(--card);
+      border: 1px solid rgba(221,227,236,.85);
+      border-radius: 22px;
+      padding: 30px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(16px);
+    }
+    .card.wide { grid-column: span 12; }
+    .card h2 { margin: 0 0 16px; font-size: 24px; letter-spacing: -.02em; }
+    .card p { margin: 0; color: var(--muted); }
+    .tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+    .tag {
+      padding: 7px 11px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: #274daf;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .skill-list { margin: 18px 0 0; padding: 0; list-style: none; }
+    .skill-list li {
+      display: grid;
+      grid-template-columns: 125px 1fr;
+      gap: 18px;
+      padding: 12px 0;
+      border-top: 1px solid var(--line);
+    }
+    .skill-list strong { font-size: 14px; }
+    .skill-list span { color: var(--muted); font-size: 14px; }
+    .timeline { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 20px; }
+    .year { padding: 22px; border: 1px solid var(--line); border-radius: 16px; background: rgba(255,255,255,.72); }
+    .year small { color: var(--accent); font-weight: 800; }
+    .year h3 { margin: 6px 0 10px; font-size: 18px; }
+    .year p { font-size: 14px; }
+    footer { padding: 46px 0 60px; color: var(--muted); font-size: 13px; text-align: center; }
+    @media (max-width: 760px) {
+      .hero { grid-template-columns: 1fr; padding-top: 42px; }
+      .summary { border-left: 0; border-top: 1px solid var(--line); padding: 20px 0 0; }
+      .card { grid-column: span 12; }
+      .timeline { grid-template-columns: 1fr; }
+      .skill-list li { grid-template-columns: 1fr; gap: 4px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <nav>
+      <a class="back" href="/">← Heimdallr 的个人博客</a>
+      <span>ABOUT / 2026</span>
+    </nav>
+
+    <header class="hero">
+      <div>
+        <p class="eyebrow">STUDENT · BUILDER · LEARNER</p>
+        <h1>你好，我是<br>Heimdallr。</h1>
+        <p class="lead">目前是一名计算机相关专业学生。我喜欢把想法真正做成能运行、能部署、能排查问题的小项目，也正在把过去偏重“做出来”的经验，逐步补成更系统的软件工程能力。</p>
+      </div>
+      <div class="summary">
+        <strong>当前关注方向</strong>
+        Web / 后端工程、AI 应用开发、网络与系统工具。
+        <br><br>
+        <strong>我最想补强的能力</strong>
+        需求分析、测试、数据库、团队协作和长期可维护性。
+      </div>
+    </header>
+
+    <main class="grid">
+      <section class="card">
+        <h2>兴趣与实践</h2>
+        <p>我对“从界面一直做到部署与排错”的完整过程更感兴趣。除了课程中的程序设计和计算机组成实验，也做过个人博客、Web 工具、自动化脚本，以及与网络代理、分流、DNS、TUN 相关的实践。</p>
+        <div class="tags">
+          <span class="tag">Web Development</span>
+          <span class="tag">AI Application</span>
+          <span class="tag">Networking</span>
+          <span class="tag">Automation</span>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>近期成果</h2>
+        <p>维护个人 GitHub Pages；完成过网页与部署类项目；在课程学习中接触汇编、计算机组成和程序设计；近期还通过 Hugging Face Inference API 完成 FLUX 文生图的前后端交互练习，并保留真实 API 日志与结果。</p>
+      </section>
+
+      <section class="card wide">
+        <h2>我的技能树</h2>
+        <ul class="skill-list">
+          <li><strong>C / C++</strong><span>能完成基础算法、程序设计和课程实验，下一步继续提高工程组织与调试能力。</span></li>
+          <li><strong>HTML / CSS / JS</strong><span>能独立构建页面并连接后端接口，希望进一步深入 TypeScript、组件化和前端工程化。</span></li>
+          <li><strong>Node.js / Python</strong><span>能写简单服务、接口与自动化脚本，正在补数据库、测试、并发和可观测性。</span></li>
+          <li><strong>Linux / Nginx / Git</strong><span>有部署和版本管理实践，下一步重点形成规范的分支、Issue、PR 与 Code Review 工作流。</span></li>
+          <li><strong>AI 工具</strong><span>会用大模型辅助检索、编程和排错，更重视结果验证、上下文控制和真实证据，而不是直接相信生成结果。</span></li>
+          <li><strong>网络技术</strong><span>对代理、分流、DNS、TUN 等有实际排错经验，希望继续系统学习计算机网络与网络安全基础。</span></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>自我评估</h2>
+        <p>目前比较明显的优势是动手意愿强，遇到陌生工具愿意查资料、复现问题、看日志并验证修改结果。不足是以前容易把注意力集中在“功能能不能跑”，对需求边界、自动化测试、代码规范、协作流程和长期维护考虑得不够系统。</p>
+      </section>
+
+      <section class="card">
+        <h2>最想继续学习</h2>
+        <p>我希望系统掌握需求分析、软件设计、数据库、自动化测试、CI/CD、团队协作与代码审查，并继续深入 Web / 后端和 AI 应用开发。目标不是增加“会用的工具数量”，而是能把一个中等规模的软件项目可靠地做完、测试并交付。</p>
+      </section>
+
+      <section class="card wide">
+        <h2>未来三年规划</h2>
+        <div class="timeline">
+          <div class="year">
+            <small>YEAR 01</small>
+            <h3>补基础，形成工程习惯</h3>
+            <p>学扎实数据结构、操作系统、网络、数据库和软件工程；坚持使用 Git，给自己的项目补 README、测试和技术记录。</p>
+          </div>
+          <div class="year">
+            <small>YEAR 02</small>
+            <h3>做完整项目，确定方向</h3>
+            <p>完成至少两个可公开展示的完整项目，从需求、前后端、数据库一直做到部署、测试和迭代，重点深入 Web / 后端与 AI 应用。</p>
+          </div>
+          <div class="year">
+            <small>YEAR 03</small>
+            <h3>面向升学或就业准备</h3>
+            <p>根据前两年的学习与项目情况确定最终方向；就业则强化算法、项目和面试能力，继续深造则提前准备英语、专业课与科研/项目经历。</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>Build, verify, document, improve. · endlessmaybe.github.io</footer>
+  </div>
+</body>
+</html>
